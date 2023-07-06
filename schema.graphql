@@ -1,0 +1,13 @@
+type Transfer @entity {
+  id: ID!
+  spender: String!
+  receiver: String!
+  amount: BigInt!
+}
+
+type Approval @entity {
+  id: ID!
+  owner: String!
+  spender: String!
+  value: BigInt!
+}
